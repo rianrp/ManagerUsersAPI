@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHsfO8CIPMeEy8dbSoUCISkI58CD800xvQJ2odNKxcbss2/r+fWe06DRUguHLQVE2coalf0Oh/vV3yFutsDbtQ==",
+  "dgSpecHash": "lZDbI958vGgqMI6umd9pRZKnIYdlyRbykICGJVpKHHF2q6y6oDBbXsbfW4ZwLFdW7LLA5oq3DsoSNydjEd5crg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Desenvolvedor_1\\Documents\\CursoUdemyAPIRobusta\\Manager\\src\\Manager.Domain\\Manager.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Desenvolvedor_1\\Documents\\CursoUdemyAPIRobusta\\Manager\\src\\2 - Manager.Domain\\Manager.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Desenvolvedor_1\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512"
   ],

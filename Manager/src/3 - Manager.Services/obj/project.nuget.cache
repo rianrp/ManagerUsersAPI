@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rXl/BIzjhHs/1jrlSZjlbxx7/RK6xk1YVvtrLLRUmZvdskb9f69GVco/hOoa0JHKakU2pZ7IM3wGBcZUku6aTQ==",
+  "dgSpecHash": "EHyN/yWvolZGOb4aRSpgWDFByzBZGBg982wuX/BjS+40iqLscfpMZMVILj00tNRt7yqDcxhaWWZV/SmW2SEFSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Desenvolvedor_1\\Documents\\CursoUdemyAPIRobusta\\Manager\\src\\Manager.Services\\Manager.Services.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Desenvolvedor_1\\Documents\\CursoUdemyAPIRobusta\\Manager\\src\\3 - Manager.Services\\Manager.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Desenvolvedor_1\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Desenvolvedor_1\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

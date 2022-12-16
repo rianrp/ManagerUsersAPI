@@ -1,5 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\5 - Manager.Core\Manager.Core.csproj" />
+    <ProjectReference Include="..\2 - Manager.Domain\Manager.Domain.csproj" />
+    <ProjectReference Include="..\4 - Manager.Infra\Manager.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
