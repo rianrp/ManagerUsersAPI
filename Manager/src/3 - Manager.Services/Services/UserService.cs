@@ -24,7 +24,7 @@ namespace Manger.Services.Services
             var user = _mapper.Map<User>(userDTO);
             
             if(userExist != null){
-                throw new DomainException("Já exite um usuario cadastrado com o email informado.");
+                throw new DomainException("Já existe um usuario cadastrado com o email informado.");
             }
 
             user.Validate();

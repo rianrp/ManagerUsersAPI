@@ -430,10 +430,21 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "Manager.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Manager.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Manager.Core.dll": {}
+        }
+      },
       "Manager.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Manager.Core": "1.0.0",
           "fluentvalidation": "11.4.0"
         },
         "compile": {
@@ -1108,6 +1119,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Manager.Core/1.0.0": {
+      "type": "project",
+      "path": "../5 - Manager.Core/Manager.Core.csproj",
+      "msbuildProject": "../5 - Manager.Core/Manager.Core.csproj"
     },
     "Manager.Domain/1.0.0": {
       "type": "project",

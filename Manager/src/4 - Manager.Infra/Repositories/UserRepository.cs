@@ -16,9 +16,18 @@ namespace Manager.Infra.Repositories
             _context = context;
         }
 
-        public Task<User> GetByEmail(string email)
+        public async Task<User> GetByEmail(string em)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users
+                                   .Where
+                                   (
+                                        x =>
+                                            x.email.ToLower() == em.ToLower()
+                                    )
+                                    .AsNoTracking()
+                                    .ToListAsync();
+
+            return user.FirstOrDefault();
         }
 
         public Task<List<User>> SearchByEmail(string email)

@@ -18,7 +18,6 @@ namespace Manager.Infra.Context{
             builder.ApplyConfiguration(new UserMap());
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql(@"Host=localhost;Port=5432;Pooling=true;Database=usuarios_curso;User Id=postgres;Password=root");
+        
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\bin\Debug\net7.0\Manager.Core.deps.json
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\bin\Debug\net7.0\Manager.Core.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\bin\Debug\net7.0\Manager.Core.pdb
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.csproj.AssemblyReference.cache
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.AssemblyInfoInputs.cache
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.AssemblyInfo.cs
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\refint\Manager.Core.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\Manager.Core.pdb
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\5 - Manager.Core\obj\Debug\net7.0\ref\Manager.Core.dll
