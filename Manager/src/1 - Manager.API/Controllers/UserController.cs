@@ -44,5 +44,20 @@ namespace Manager.API.Controllers
                 return StatusCode(500, Responses.ApplicationErrorMessage());
             }
         }
+
+        [HttpGet]
+        [Route("/api/v1/users/getuser")]
+        public Task<IActionResult> Get(int id)
+        {
+            try
+            {
+                var user = _userService.
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+        }
     }
 }

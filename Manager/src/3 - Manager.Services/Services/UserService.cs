@@ -22,9 +22,9 @@ namespace Manger.Services.Services
         {
             var userExist = await _userRepository.GetByEmail(userDTO.email);
             var user = _mapper.Map<User>(userDTO);
-            
+
             if(userExist != null){
-                throw new DomainException("Já existe um usuario cadastrado com o email informado.");
+                throw new DomainException("Já exite um usuario cadastrado com o email informado.");
             }
 
             user.Validate();

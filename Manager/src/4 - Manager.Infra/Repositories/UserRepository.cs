@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Manager.Domain.Entities;
@@ -5,10 +6,8 @@ using Manager.Infra.Context;
 using Manager.Infra.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Manager.Infra.Repositories
-{
-    public class UserRepository : BaseRepository<User>, IUserRepository
-    {
+namespace Manager.Infra.Repositories{
+    public class UserRepository : BaseRepository<User>, IUserRepository{
         private readonly ManagerContext _context;
 
         public UserRepository(ManagerContext context) : base(context)
@@ -16,13 +15,13 @@ namespace Manager.Infra.Repositories
             _context = context;
         }
 
-        public async Task<User> GetByEmail(string em)
+        public async Task<User> GetByEmail(string email)
         {
             var user = await _context.Users
                                    .Where
                                    (
                                         x =>
-                                            x.email.ToLower() == em.ToLower()
+                                            x.email.ToLower() == email.ToLower()
                                     )
                                     .AsNoTracking()
                                     .ToListAsync();
@@ -30,14 +29,32 @@ namespace Manager.Infra.Repositories
             return user.FirstOrDefault();
         }
 
-        public Task<List<User>> SearchByEmail(string email)
+        public async Task<List<User>> SearchByEmail(string email)
         {
-            throw new NotImplementedException();
+            var allUsers = await _context.Users
+                                   .Where
+                                   (
+                                        x =>
+                                            x.email.ToLower().Contains(email.ToLower())
+                                    )
+                                    .AsNoTracking()
+                                    .ToListAsync();
+
+            return allUsers;
         }
 
-        public Task<List<User>> SearchByName(string name)
+        public async Task<List<User>> SearchByName(string name)
         {
-            throw new NotImplementedException();
+            var allUsers = await _context.Users
+                                   .Where
+                                   (
+                                        x =>
+                                            x.email.ToLower().Contains(name.ToLower())
+                                    )
+                                    .AsNoTracking()
+                                    .ToListAsync();
+
+            return allUsers;
         }
     }
 }
