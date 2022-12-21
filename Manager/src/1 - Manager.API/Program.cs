@@ -1,3 +1,4 @@
+using System.Text;
 using AutoMapper;
 using Manager.API.ViewModels;
 using Manager.Domain.Entities;
@@ -8,7 +9,9 @@ using Manager.Services.DTO;
 using Manager.Services.Interfaces;
 using Manger.Services.Services;
 using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,12 +24,35 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserServices, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
+
+#region Jwt
+var secretKey = "Jwt:Key";
+builder.Services.AddAuthentication(x =>
+        {
+            x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(x =>
+        {
+            x.RequireHttpsMetadata = false;
+            x.SaveToken = true;
+            x.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+        });
+#endregion
+
 #region Automapper
 
 var autoMapperConfig = new MapperConfiguration(cfg =>
 {
     cfg.CreateMap<User, UserDTO>().ReverseMap();
     cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
+    cfg.CreateMap<UpdateUserViewModel, UserDTO>().ReverseMap();
 });
 
 builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
@@ -44,6 +70,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -49,18 +49,18 @@ namespace Manger.Services.Services
             return _mapper.Map<UserDTO>(userUpdate);
         }
 
-        public async Task<List<UserDTO>> Get()
+        public async Task<List<UserDTO>> GetAll()
         {
             var allUsers = await _userRepository.GetAllAsync();
 
             return _mapper.Map<List<UserDTO>>(allUsers);
         }
         
-        public async Task<List<UserDTO>> Get(long id)
+        public async Task<UserDTO> Get(long id)
         {
             var user = await _userRepository.GetAsync(id);
 
-            return _mapper.Map<List<UserDTO>>(user);
+            return _mapper.Map<UserDTO>(user);
         }
 
         public async Task<UserDTO> GetByEmail(string email)

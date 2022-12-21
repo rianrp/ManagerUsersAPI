@@ -46,3 +46,11 @@ C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.
 C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\obj\Debug\net7.0\Manager.API.pdb
 C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\obj\Debug\net7.0\Manager.API.genruntimeconfig.cache
 C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\obj\Debug\net7.0\ref\Manager.API.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Desenvolvedor_1\Documents\CursoUdemyAPIRobusta\Manager\src\1 - Manager.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
